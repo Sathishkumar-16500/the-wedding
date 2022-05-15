@@ -1,9 +1,12 @@
 body {
-  font-family: "Dosis", sans-serif; }
-
+  font-family: "Dosis", sans-serif; 
+  background-image: radial-gradient(circle, #ffcccc, #ffc7c7, #ffc2c2, #ffbdbd, #ffb8b8);}
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 /* Home Page Style */
 .ww-home-page {
-  background: url("../images/home-img.jpg") no-repeat center center;
+  /* background-color: #fab1a0; */
+  
+  background: url("../images/home-img1.jpg") no-repeat center center;
   background-size: cover;
   background-position: 70%;
   height: 100vh;
@@ -34,7 +37,9 @@ body {
       @media (max-width: 576px) {
         .ww-home-page .ww-wedding-announcement .ww-couple-name {
           font-size: 50px; } }
-
+.ww-couple-name{
+  margin-bottom: 20rem;
+}
 .ww-home-page:before {
   content: "";
   background-color: rgba(245, 138, 119, 0.2);
@@ -166,17 +171,114 @@ body {
   color: inherit;
   border-bottom: 1px dashed;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer; 
+  margin-top: 160px;}
 
 /* Common Style */
 .ww-title {
-  font-family: "Great Vibes", cursive; }
+  font-family: "Great Vibes", cursive;}
 
 .ww-section {
-  padding: 100px 0; }
+  padding-bottom: 5px;
+  padding-top: 0px;
+}
 
 .btn-primary {
   color: #fff; }
 
 .btn-outline-primary:hover {
   color: #fff; }
+
+@media screen and (max-width: 540px) {
+    .ww-home-page {
+        background-position: 50%;
+    }
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+  .ww-home-page {
+      background-size: inherit;
+      color: #fab1a0;
+  }
+}
+
+.buttonfx{
+  color: black; /* button text color */
+  outline: none;
+  background: #fab1a0;
+  border: none;
+  border-bottom: 4px solid #eee;
+  letter-spacing: 0.0625em;
+  /* padding: 8px 10px;  */
+  text-transform: uppercase;
+  /* font: bold 16px 'Bitter', sans-serif; use google font   */
+  line-height: 2;
+  position: relative;
+	display: inline-block;
+  /* margin-right: 20px; */
+  /* margin-bottom: 20px; */
+  cursor: pointer;
+	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+  font-family: "Great Vibes", cursive;
+  padding: 0px;
+  width: 50%;
+  height: 30px;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.button_slide {
+  color: #FFF;
+  border: 2px solid #fab1a0;
+  background-color:#fab1a0 ;
+  border-radius: 0px;
+  /* padding: 18px 36px; */
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ff7675;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  font-family: "Great Vibes", cursive;
+  padding: 0px;
+  width: 50%;
+  height: 30px;
+  margin-top: 25px;
+  margin-left: 85px;
+  width: 240px;
+
+
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #ff7675;
+}
+.venue{
+  width: 100%;
+  background-color: #dfe6e9;
+  padding: 10px;
+  height: 220px;
+  text-align: center;
+  /* font-family: "Great Vibes", cursive; */
+  font-size: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.venue1{
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 540px) {
+  .venue1{
+    font-size: 20px;
+  }
+  
+}
